@@ -3,10 +3,10 @@ let lemonPrice = 123.965;
 let orangePrice = 90.2345;
 
 // Завдання 1
-console.log (Math.max(applePrice, lemonPrice, orangePrice));
+console.log(Math.max(applePrice, lemonPrice, orangePrice));
 
 // Завдання 2
-console.log (Math.min(applePrice, lemonPrice, orangePrice));
+console.log(Math.min(applePrice, lemonPrice, orangePrice));
 
 // Завдання 3
 let allSumGoods = applePrice + lemonPrice + orangePrice;
@@ -27,8 +27,9 @@ console.log(+((allSumGoods / 3).toFixed(2)));
 
 // Завдання 9
 let randomSale = Math.trunc(Math.random() * 100);
+console.log(randomSale);
 // amountToPay = випадкова сума до оплати
-let amountToPay = 500; 
+let amountToPay = 700;
 let sale = (+((amountToPay * randomSale) / 100).toFixed(2));
 let profit = (amountToPay / 2) - sale;
 console.log(profit)
