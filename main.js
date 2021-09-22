@@ -16,20 +16,19 @@ console.log(allSumGoods);
 console.log(Math.floor(Math.trunc(applePrice) + Math.trunc(lemonPrice) + Math.trunc(orangePrice)));
 
 // Завдання 5
-console.log(Math.round(allSumGoods));
+console.log(Math.round(allSumGoods / 100) * 100);
+
+console.log(Math.round(Math.floor(allSumGoods) % 2 === 0));
 
 // Завдання 7
 let sum = 500;
 console.log(sum - allSumGoods);
 
 // Завдання 8
-console.log(+((allSumGoods / 3).toFixed(2)));
+const averagePrice = allSumGoods / 3;
+console.log(Math.round(averagePrice * 100) / 100);
 
 // Завдання 9
-let randomSale = Math.trunc(Math.random() * 100);
+let randomSale = Math.floor(Math.random() * 100);
 console.log(randomSale);
-// amountToPay = випадкова сума до оплати
-let amountToPay = 700;
-let sale = (+((amountToPay * randomSale) / 100).toFixed(2));
-let profit = (amountToPay / 2) - sale;
-console.log(profit)
+console.log(Math.round((allSumGoods / 2 - (allSumGoods * randomSale) / 100) * 100) / 100);
