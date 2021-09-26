@@ -1,0 +1,22 @@
+body {
+  background-color: burlywood;
+}
+
+span {
+  min-width: 280px;
+  display: flex;
+  font-size: 80px;
+  justify-content: center;
+  font-weight: 900;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+}
