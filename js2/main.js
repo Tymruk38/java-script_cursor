@@ -24,10 +24,10 @@ do {
 
 console.log(n);
 
-let m;
+let m = parseInt(prompt("Hi, enter a number M"));
 do {
     m = parseInt(prompt("Hi, enter a number M"));
-} while (Number.isNaN(m) && m > n);
+} while (Number.isNaN(m));
 
 console.log(m);
 
