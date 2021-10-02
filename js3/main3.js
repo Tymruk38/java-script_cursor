@@ -11,7 +11,7 @@ const getMaxDigit = (number) => {
 
 const getPow = (a, b) => {
   let result = a;
-  for (let i = 1; i < b; i++) {
+  for (let i = 1; i <= b; i++) {
     result *= a;
   }
   return result;
@@ -58,7 +58,7 @@ const countLetter = (letter, str) => {
 const convertCurrency = (exchangeMoney) => {
   if (exchangeMoney.toUpperCase().includes("UAH")) {
     return (parseInt(exchangeMoney) / 25).toFixed(2) + "$";
-  } else if (exchangeMoney.toUpperCase().includes("$")) {
+  } else if (exchangeMoney.includes("$")) {
     return (parseInt(exchangeMoney) * 25).toFixed(2) + "UAH";
   }
 };
@@ -67,8 +67,8 @@ console.log(convertCurrency("1250$"));
 //  Функція 8
 const getRandomPassword = (number = 8) => {
   let result = "";
-  for (let i = 0; i < number; i++) {
-    result += Math.round(Math.random() * 9);
+  for (let i = 0; i <= number; i++) {
+    result += Math.round(Math.random() * 10);
   }
   return result;
 };
