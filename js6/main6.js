@@ -38,31 +38,29 @@ const getSubjects = (subject) => {
   return subjects;
 };
 
-// let subjects = (getSubjects(students[2].subjects));
-// console.log(subjects)
 console.log(getSubjects(students[0].subjects));
 
+// Функція 2
+const getAverageMark = (students) =>{
+   const markSubject = Object.values(students.subjects);
+   const allMarkSubject = markSubject[0].concat(markSubject[1], markSubject[2]);
+   const averageMark = (allMarkSubject.reduce((n1, n2)=> n1 + n2));
+   return +(averageMark /  allMarkSubject.length).toFixed(2)
+}
+console.log(getAverageMark(students[1]))
 
-// const getStudentsNames = (studentsNames) =>{
-//   let names = [].sort((a, b) => a - b);
-//   for (let key in studentsNames){
-//     const studentsName = key;
-//     names.push(studentsName);
-//   }
-//   return names
-// }
-// console.log(getStudentsNames(students.name))
 
-// const getStudentsNames = (names) => students.sort((a, b) => {
-//   if (a.name > b.name) {
-//     return 1;
-//   }
-//   if (a.name < b.name) {
-//     return -1;
-//   }
-//   return 0;
-// });
-// console.log(getStudentsNames(students.name))
+// Функція 3
+
+const getStudentInfo = (students) =>  {
+  const studentInfo = {
+    course : students.course,
+    name : students.name,
+    averageMark : getAverageMark(students),
+  };
+  return studentInfo
+}
+console.log( getStudentInfo(students[1]))
 
 // Функція 4
 const getStudentsNames = (studentsNames) =>{
@@ -78,4 +76,7 @@ const getStudentsNames = (studentsNames) =>{
   return name
 }
 console.log(getStudentsNames(students))
+
+// Функція 5
+
 

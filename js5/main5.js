@@ -62,15 +62,21 @@ console.log(
   )
 );
 
-// Функція 8
+// Функція 7
 const replaceBadWords = (string) => {
-  const badWords = ["shit", "fuck", "you"];
-  let result = string;
+  const badWord = ["shit", "fuck"];
+  let badString = string;
 
-  for (let i = 0; i < badWords.length; i++) {
-    result = result.split(badWords[i]).join("****");
+  for (let word of badWord) {
+    let length = word.length;
+    let starHide = "*".repeat(length);
+    if (string.toLowerCase().includes(word)) {
+      badString = badString.toLowerCase().replaceAll(word.toLowerCase(), starHide);
+    }
+    badString = badString[0].toUpperCase() + badString.slice(1);
   }
-
-  return result;
+  return badString;
 };
-console.log(replaceBadWords("Holy shit you!"));
+
+const getReplaceBadWords = replaceBadWords("Are you fucking  kidding?");
+console.log(getReplaceBadWords);
