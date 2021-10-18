@@ -47,4 +47,4 @@ const getMySalary = function (country) {
   };
 };
 
-setInterval(() => console.log(getMySalary.call(ukraine)), 10000);
+// setInterval(() => console.log(getMySalary.call(ukraine)), 10000);
