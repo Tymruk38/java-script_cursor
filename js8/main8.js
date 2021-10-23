@@ -25,10 +25,11 @@ class Student {
       return +(
         this.marks.reduce((sum, mark) => sum + mark) / this.marks.length
       ).toFixed(1);
-    } else {
-      return 0;
     }
+      return 0;
+  
   }
+
   dismiss() {
     this.deletedMarks = this.marks;
     this.marks = null;
