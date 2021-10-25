@@ -1,4 +1,9 @@
 const container = document.querySelector(".container_flex");
+container.style.width = "250px";
+container.style.height = "250px";
+container.style.display = "flex";
+container.style.flexWrap = "wrap";
+container.style.margin = "50px auto";
 const generateBlocks = () => {
   for (const square of container.children) {
     const r = Math.round(Math.random() * 255);
