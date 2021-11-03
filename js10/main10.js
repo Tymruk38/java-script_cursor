@@ -22,8 +22,8 @@ keyClass.forEach((key) => key.addEventListener('transitionend', removeTransition
 
 keyClass.forEach(key => key.addEventListener('click', function() {
     removeTransition();
-    const id = this.id;
-    this.classList.add('playing');
+    const event = event.target;
+    event.target.classList.add('playing');
     audioTag.forEach(audio => {
         if (audio.id === id) {
             audio.currentTime = 0;
