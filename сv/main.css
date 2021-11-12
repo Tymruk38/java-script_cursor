@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato';
+    color: #041d35;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  body div {
+    box-sizing: border-box;
+  }
+  body p {
+    margin: 0;
+    line-height: 1.4;
+  }
+  .name {
+    font-size: 44px;
+    text-align: center;
+    margin: 0 0 20px;
+  }
+  .a4 {
+    width: 790px;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+  .contants {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .details {
+    display: flex;
+    align-items: flex-start;
+    margin: 5px 0;
+  }
+  .details .title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    width: 120px;
+    flex-shrink: 0;
+    text-align: right;
+    padding: 0 15px;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .details .title:before {
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    width: 2px;
+    height: 100%;
+    background-color: #041d35;
+  }
+  .details .desc {
+    padding: 0 15px;
+    flex-grow: 1;
+  }
+  .details .desc.flex {
+    display: flex;
+    align-items: flex-start;
+  }
+  .list {
+    margin-bottom: 10px;
+    flex-grow: 1;
+  }
+  .list p {
+    margin-bottom: 10px;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  ul li {
+    padding-left: 15px;
+    margin: 2.5px 0;
+    position: relative;
+  }
+  ul li:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 6px;
+    width: 4px;
+    height: 4px;
+    background-color: #041d35;
+    border-radius: 100em;
+    display: block;
+  }
+  .underlined {
+    position: relative;
+    display: inline-flex;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .underlined::before {
+    content: '';
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: -1.5px;
+    left: 0;
+    background-color: #041d35;
+  }
+  .exp {
+    margin-bottom: 20px;
+  }
+  .exp:last-child {
+    margin-bottom: 0;
+  }
+  .exp-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .exp .project {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #041d35;
+  }
+  .exp .project:last-child {
+    border: none;
+    margin-bottom: 0;
+  }
+  .exp .project div {
+    margin: 5px 0;
+  }
+  .exp .project div .item {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  .exp .project .underlined {
+    flex-shrink: 0;
+    margin: 0;
+  }
+  
